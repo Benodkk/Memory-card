@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Memory-card/static/css/main.f824a6bd.css",
+    "main.js": "/Memory-card/static/js/main.1d3aa066.js",
+    "static/media/pippin.png": "/Memory-card/static/media/pippin.e6e6c02917be38d77ba3.png",
+    "static/media/gimli.png": "/Memory-card/static/media/gimli.8617ff2e4b228763bd9a.png",
+    "static/media/gandalf.png": "/Memory-card/static/media/gandalf.0cfbd4ee17001ee827e2.png",
+    "static/media/landscpae.webp": "/Memory-card/static/media/landscpae.90d314a101cf6a9cabfd.webp",
+    "static/media/bilbo.png": "/Memory-card/static/media/bilbo.e3b5a878f17c65f428c0.png",
+    "static/media/boromir.png": "/Memory-card/static/media/boromir.fa247047f8ae067d6e12.png",
+    "static/media/aragorn.png": "/Memory-card/static/media/aragorn.54c588a00dd46dbfe815.png",
+    "static/media/merry.png": "/Memory-card/static/media/merry.15d722f942cc76188298.png",
+    "static/media/sauron.png": "/Memory-card/static/media/sauron.4a7220499dab8a2cea84.png",
+    "static/media/smeagel.png": "/Memory-card/static/media/smeagel.e4ef3069a8ad1d9300cd.png",
+    "static/media/saruman.png": "/Memory-card/static/media/saruman.33c202dd01c1da330e99.png",
+    "static/media/legolas.png": "/Memory-card/static/media/legolas.6315aa05f2aba849fa78.png",
+    "static/media/Frodo.webp": "/Memory-card/static/media/Frodo.f032b5e3abee33737b11.webp",
+    "index.html": "/Memory-card/index.html",
+    "main.f824a6bd.css.map": "/Memory-card/static/css/main.f824a6bd.css.map",
+    "main.1d3aa066.js.map": "/Memory-card/static/js/main.1d3aa066.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f824a6bd.css",
+    "static/js/main.1d3aa066.js"
+  ]
+}
