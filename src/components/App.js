@@ -8,31 +8,39 @@ function App() {
   const [highscore, setHighscore] = useState(0)
   const [chosenCards, setCards] = useState([])
   
-  const choosenCard = () => {
-    let chosenCard 
-    if(chosenCards.some(x => x == chosenCard) == true ){
+  const chosenCard = (e) => {
+    let chsenCard = e.target.getAttribute('id')
+    setCards(chosenCards.concat(chsenCard))
+    if(chosenCards.some(x => x == chsenCard) == true ){
       setScore(0)
       setCards([])
+      if(score>highscore){
+        setHighscore(score)
+      }
     }
     else {
-      // setCards(chosenCards.push(card)),
+      setCards(chosenCards.concat(chsenCard))
       setScore(score+1)
     }
 
-    if(score>highscore){
-      setHighscore(score)
-    }
-
-  }
-  const srom = (e) => {
-    let nr = e.target.getAttribute('id')
-    console.log(nr)
-    // console.log(e.target.value)
+    // if(score>highscore){
+    //   setHighscore(score)
+    // }
+    console.log(chosenCards)
+    console.log(score)
+    console.log(highscore)
   }
 
   return (
-    <div>
-      <GenerateCards choosenCard={srom}/>
+    <div className="content">
+      <div className="header">
+        <div className="title">LOTR Memory Game</div>
+        <div className="right">
+          <div>Score:{score}</div>
+          <div>Highscore:{highscore}</div>
+        </div>
+      </div>
+      <GenerateCards chosenCard={chosenCard}/>
     </div>
   );
 }

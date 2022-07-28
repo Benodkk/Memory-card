@@ -4,7 +4,9 @@ import '../css/GenerateCards.css'
 
 function GenerateCards(props) {
   
-  const {choosenCard} = props;
+  const {chosenCard} = props;
+
+    // generate new cards after choosing one
 
     const newCards = () =>{
       let nums = ['c0','c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','c11']
@@ -97,7 +99,7 @@ function GenerateCards(props) {
     return (
       <div className="cards">
           <div className="cardsContainer">{cardo.map((theOne) => {
-              return <div key={uniqid()} onClick={choosenCard} >{theOne}</div>
+              return <div className="oneCardContainer" key={uniqid()} onClick={chosenCard} >{theOne}</div>
           })}
           </div>
       </div>

@@ -1,58 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+html{
+    background-image: url("landscpae.webp");
+    background-size:100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+}
+.title{
+    font-size: 30px;
+}
+.right{
+    font-size: 20px;
+}
 .cardsContainer{
-    display:flex;
-    flex-wrap: wrap ;
-    gap: 50px
+    display:grid;
+    grid-template-columns: repeat(4,minmax(200px,300px));
+    grid-template-rows: repeat(3,minmax(180px,220px));
+    justify-content: center;
+}
+.oneCardContainer{
+    display: flex;
+    justify-content: center;
 }
 .oneCard {
-    width: 150px;
-    height: 150px;
-    border: 1px black solid ;
+    width: 180px;
+    height: 180px;
+    border: 3px black solid ;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
 }
+
+.oneCard:not(:disabled):hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 80px 80px, rgba(0, 0, 0, 0.25) 0px -20px 45px, rgba(0, 0, 0, 0.25) 0px 8px 12px, rgba(0, 0, 0, 0.3) 0px 18px 20px, rgba(0, 0, 0, 0.09) 0px -6px 10px;
+
+  }
+  
+  .oneCard:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+  }
+  
+  .oneCard:focus {
+    outline: 0 solid transparent;
+  }
+  
+  .oneCard:focus:before {
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+  }
+  
+  .oneCard:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+  }
+  
+  .oneCard:focus:not(:focus-visible):before {
+    border-width: 0;
+  }
+  
+  .oneCard:not(:disabled):active {
+    transform: translateY(.125rem);
+  }
+
+
+
+
 #c0{
     background-image: url("aragorn.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c1{
     background-image: url("Frodo.webp");
-    background-size:165px;
+    background-size:200px;
 }
 #c2{
     background-image: url("legolas.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c3{
     background-image: url("bilbo.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c4{
     background-image: url("boromir.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c5{
     background-image: url("gandalf.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c6{
     background-image: url("gimli.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c7{
     background-image: url("merry.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c8{
     background-image: url("pippin.png");
-    background-size:165px;
+    background-size:200px;
 }
 #c9{
     background-image: url("saruman.png");
-    background-size:165px;
+    background-size:190px;
 }
 #c10{
     background-image: url("sauron.png");
-    background-size:165px;
+    background-size:180px;
 }
 #c11{
     background-image: url("smeagel.png");
-    background-size:165px;
+    background-size:200px;
 }
