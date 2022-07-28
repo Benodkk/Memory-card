@@ -1,0 +1,58 @@
+.cardsContainer{
+    display:flex;
+    flex-wrap: wrap ;
+    gap: 50px
+}
+.oneCard {
+    width: 150px;
+    height: 150px;
+    border: 1px black solid ;
+}
+#c0{
+    background-image: url("aragorn.png");
+    background-size:165px;
+}
+#c1{
+    background-image: url("Frodo.webp");
+    background-size:165px;
+}
+#c2{
+    background-image: url("legolas.png");
+    background-size:165px;
+}
+#c3{
+    background-image: url("bilbo.png");
+    background-size:165px;
+}
+#c4{
+    background-image: url("boromir.png");
+    background-size:165px;
+}
+#c5{
+    background-image: url("gandalf.png");
+    background-size:165px;
+}
+#c6{
+    background-image: url("gimli.png");
+    background-size:165px;
+}
+#c7{
+    background-image: url("merry.png");
+    background-size:165px;
+}
+#c8{
+    background-image: url("pippin.png");
+    background-size:165px;
+}
+#c9{
+    background-image: url("saruman.png");
+    background-size:165px;
+}
+#c10{
+    background-image: url("sauron.png");
+    background-size:165px;
+}
+#c11{
+    background-image: url("smeagel.png");
+    background-size:165px;
+}
